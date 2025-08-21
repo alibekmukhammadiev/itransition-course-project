@@ -12,6 +12,7 @@ import Layout from "./components/Layout";
 import SignUp from "./pages/SignUp";
 import LogIn from "./pages/LogIn";
 import MainPage from "./pages/MainPage";
+import InventoryPage from "./pages/InventoryPage";
 
 // checking whether user logged in before
 import ProtectedRoute from "./context/ProtectedRoute";
@@ -50,6 +51,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/inventory" element={<InventoryPage />} />
       </Routes>
     </Layout>
   );

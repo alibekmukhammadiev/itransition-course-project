@@ -1,0 +1,28 @@
+{
+  "login": {
+    "title": "Login",
+    "span": "Don't have an account?",
+    "link": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "alter": {
+      "login": "Or login with",
+      "signup": "Or sign up with"
+    }
+  },
+  "signup": {
+    "title": "Create an account",
+    "span": "Already have an account?",
+    "link": "Login",
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "password": "Password"
+    },
+    "button": "Create account"
+  },
+
+  "footer": {
+    "rights": "© 2025 Inventory Management App. All rights reserved."
+  }
+}

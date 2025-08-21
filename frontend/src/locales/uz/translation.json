@@ -1,0 +1,28 @@
+{
+  "login": {
+    "title": "Kirish",
+    "span": "Akkauntingiz yo'qmi?",
+    "link": "Ro'yxatdan o'tish",
+    "email": "Elektron pochta",
+    "password": "Parol",
+    "alter": {
+      "login": "Yoki quyidagilar orqali kiring",
+      "signup": "Yoki quyidagilar orqali ro'yxatdan o'ting"
+    }
+  },
+  "signup": {
+    "title": "Hisob yarating",
+    "span": "Allaqachon akkauntingiz bormi?",
+    "link": "Kirish",
+    "placeholders": {
+      "name": "Ism",
+      "email": "Elektron pochta",
+      "password": "Parol"
+    },
+    "button": "Akkaunt yaratish"
+  },
+
+  "footer": {
+    "rights": "© 2025 Inventar boshqaruv ilovasi. Barcha huquqlar himoyalangan."
+  }
+}

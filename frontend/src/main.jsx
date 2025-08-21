@@ -11,6 +11,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // react-router-dom
 import { BrowserRouter } from "react-router-dom";
 
+// import i18n configuration so translations are initialized before the app renders
+import "./i18n.js";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>

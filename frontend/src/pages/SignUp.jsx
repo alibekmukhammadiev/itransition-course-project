@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 // react-router-dom
 import { Link } from "react-router-dom";
 
@@ -5,6 +7,7 @@ import { Link } from "react-router-dom";
 import GoogleFacebook from "../components/GoogleFacebook";
 
 export default function SignUp() {
+  const { t } = useTranslation();
   const handleSignUp = (e) => {
     e.preventDefault();
   };
@@ -16,27 +19,27 @@ export default function SignUp() {
         style={{ maxWidth: "450px" }}
         className="d-flex flex-column gap-3 w-100 p-5 bg-light shadow rounded"
       >
-        <h1 className="h3 text-center">Create an account</h1>
+        <h1 className="h3 text-center">{t("signup.title")}</h1>
         <span className="text-center">
-          Already have an account? <Link to="/login">Log in</Link>
+          {t("signup.span")} <Link to="/login">{t("signup.link")}</Link>
         </span>
         <div className="d-flex flex-column gap-3">
           <input
             type="text"
             className="form-control"
-            placeholder="Name"
+            placeholder={t("signup.placeholders.name")}
             required
           />
           <input
             type="email"
             className="form-control"
-            placeholder="Email"
+            placeholder={t("signup.placeholders.email")}
             required
           />
           <input
             type="password"
             className="form-control"
-            placeholder="Password"
+            placeholder={t("signup.placeholders.password")}
             required
           />
         </div>
@@ -45,9 +48,9 @@ export default function SignUp() {
           style={{ backgroundColor: "var(--purple-500)" }}
           className="btn text-light"
         >
-          Create account
+          {t("signup.button")}
         </button>
-        <GoogleFacebook type="sign up" />
+        <GoogleFacebook type="signup" />
       </form>
     </div>
   );
