@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 // react-router-dom
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 // darkmode.js
 import Darkmode from "darkmode-js";
@@ -18,6 +18,7 @@ import InventoryPage from "./pages/InventoryPage";
 import ProtectedRoute from "./context/ProtectedRoute";
 
 function App() {
+  const location = useLocation();
   // Initialize Darkmode.js when App component mounts
   useEffect(() => {
     const options = {
@@ -37,8 +38,12 @@ function App() {
     const darkmode = new Darkmode(options);
     darkmode.showWidget();
   }, []);
+
+  // determine whether to show search bar
+  const showSearch = !["/login", "/signup"].includes(location.pathname);
+
   return (
-    <Layout>
+    <Layout showSearch={showSearch}>
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<LogIn />} />
@@ -51,7 +56,14 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/inventory" element={<InventoryPage />} />
+        <Route
+          path="/inventory"
+          element={
+            <ProtectedRoute>
+              <InventoryPage />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </Layout>
   );

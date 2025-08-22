@@ -1,22 +1,6 @@
 function MainPage() {
   return (
     <div className="container py-4">
-      {/* Search bar */}
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className="mb-0">Dashboard</h2>
-        <form className="d-flex" role="search">
-          <input
-            className="form-control me-2"
-            type="search"
-            placeholder="Search inventories..."
-            aria-label="Search"
-          />
-          <button className="btn btn-outline-primary" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-
       {/* Latest and Top inventories*/}
       <div className="d-flex flex-wrap gap-3">
         {/* Latest Inventories */}
@@ -29,42 +13,51 @@ function MainPage() {
               <thead className="table-light">
                 <tr>
                   <th>Name</th>
-                  <th>By</th>
+                  <th>Author</th>
+                  <th>Description</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>📱 Phones</td>
                   <td>Alice</td>
+                  <td>Iphones for employees</td>
                 </tr>
                 <tr>
                   <td>📂 HR Records</td>
                   <td>Bob</td>
+                  <td>List of records for employees</td>
                 </tr>
                 <tr>
                   <td>📚 Books Lib</td>
                   <td>John</td>
+                  <td>Mdist books</td>
                 </tr>
                 <tr>
                   <td>💻 Laptops</td>
                   <td>Mary</td>
+                  <td>Outdated laptops of Dell</td>
                 </tr>
                 <tr>
                   <td>🎧 Headphones</td>
                   <td>Chris</td>
+                  <td>Wiresless headphones</td>
                 </tr>
                 {/* Scrollable extras */}
                 <tr>
                   <td>🏠 Furniture</td>
                   <td>David</td>
+                  <td>Old school Furnitures</td>
                 </tr>
                 <tr>
                   <td>🖨 Printers</td>
                   <td>Sara</td>
+                  <td>List of Broken Printers</td>
                 </tr>
                 <tr>
                   <td>📦 Storage</td>
                   <td>Olivia</td>
+                  <td>Free to get a pen</td>
                 </tr>
               </tbody>
             </table>
@@ -77,7 +70,7 @@ function MainPage() {
           style={{ minWidth: "300px", maxWidth: "500px" }}
         >
           <div className="bg-light border-bottom h5 px-2 py-2 fw-bold">
-            Top 5 Popular Inventories
+            Leading 5 Inventories
           </div>
           <table className="table table-striped mb-0">
             <thead className="table-light">
@@ -126,6 +119,16 @@ function MainPage() {
           <button className="btn btn-outline-secondary btn-sm">Office</button>
           <button className="btn btn-outline-info btn-sm">People</button>
           <button className="btn btn-outline-dark btn-sm">Music</button>
+
+          {/* More granular */}
+          <button className="btn btn-outline-success btn-sm">Laptop</button>
+          <button className="btn btn-outline-success btn-sm">Headphones</button>
+          <button className="btn btn-outline-secondary btn-sm">Chair</button>
+          <button className="btn btn-outline-warning btn-sm">Documents</button>
+          <button className="btn btn-outline-info btn-sm">Employee</button>
+          <button className="btn btn-outline-danger btn-sm">
+            Out of Stock
+          </button>
         </div>
       </div>
     </div>
