@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function InventoryPage() {
   const [activeTab, setActiveTab] = useState("items");
+  const { t } = useTranslation();
 
   // Example mock data
   const items = [
@@ -58,7 +60,7 @@ function InventoryPage() {
               className={`nav-link ${activeTab === "items" ? "active" : ""}`}
               onClick={() => setActiveTab("items")}
             >
-              Items
+              {t("inventoryPage.items")}
             </button>
           </li>
           <li className="nav-item">
@@ -68,7 +70,7 @@ function InventoryPage() {
               }`}
               onClick={() => setActiveTab("discussion")}
             >
-              Discussion
+              {t("inventoryPage.discussion")}
             </button>
           </li>
         </ul>
@@ -114,10 +116,10 @@ function InventoryPage() {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Write a comment..."
+                  placeholder={t("inventoryPage.placeholder")}
                 />
                 <button type="submit" className="btn btn-primary ms-2">
-                  Post
+                  {t("inventoryPage.post")}
                 </button>
               </form>
             </>

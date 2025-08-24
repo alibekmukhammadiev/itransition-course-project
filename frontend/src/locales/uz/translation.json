@@ -22,6 +22,44 @@
     "button": "Akkaunt yaratish"
   },
 
+  "mainPage": {
+    "latestInventories": "So'nggi inventarlar",
+    "leadingInventories": "Eng mashhur 5 inventar",
+    "tagCloud": "Teglar buluti",
+
+    "table": {
+      "name": "Nomi",
+      "author": "Muallif",
+      "description": "Tavsif",
+      "items": "Buyumlar"
+    },
+
+    "tags": {
+      "books": "Kitoblar",
+      "electronics": "Elektronika",
+      "hr": "Kadrlar",
+      "office": "Ofis",
+      "people": "Odamlar",
+      "music": "Musiqa",
+      "laptop": "Noutbuk",
+      "headphones": "Quloqchinlar",
+      "chair": "Stul",
+      "documents": "Hujjatlar",
+      "employee": "Xodim",
+      "outOfStock": "Omborda yo'q"
+    }
+  },
+  "inventoryPage": {
+    "items": "Buyumlar",
+    "discussion": "Izohlar",
+    "placeholder": "Izoh yozing...",
+    "post": "Yuborish"
+  },
+  "searchBar": {
+    "placeholder": "Inventarlarni qidirish...",
+    "button": "Qidirish"
+  },
+
   "footer": {
     "rights": "© 2025 Inventar boshqaruv ilovasi. Barcha huquqlar himoyalangan."
   }

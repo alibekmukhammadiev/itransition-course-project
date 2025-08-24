@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Searchbar() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="container d-flex justify-content-start align-items-center mb-2 mt-4">
@@ -8,11 +10,11 @@ export default function Searchbar() {
           <input
             className="form-control me-2"
             type="search"
-            placeholder="Search inventories..."
+            placeholder={t("searchBar.placeholder")}
             aria-label="Search"
           />
           <button className="btn btn-outline-primary" type="submit">
-            Search
+            {t("searchBar.button")}
           </button>
         </form>
       </div>

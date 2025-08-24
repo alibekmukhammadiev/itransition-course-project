@@ -22,6 +22,45 @@
     "button": "Create account"
   },
 
+  "mainPage": {
+    "latestInventories": "Latest Inventories",
+    "leadingInventories": "Leading 5 Inventories",
+    "tagCloud": "Tag Cloud",
+
+    "table": {
+      "name": "Name",
+      "author": "Author",
+      "description": "Description",
+      "items": "Items"
+    },
+
+    "tags": {
+      "books": "Books",
+      "electronics": "Electronics",
+      "hr": "HR",
+      "office": "Office",
+      "people": "People",
+      "music": "Music",
+      "laptop": "Laptop",
+      "headphones": "Headphones",
+      "chair": "Chair",
+      "documents": "Documents",
+      "employee": "Employee",
+      "outOfStock": "Out of Stock"
+    }
+  },
+  "inventoryPage": {
+    "items": "Items",
+    "discussion": "Comments",
+    "placeholder": "Write a comment...",
+    "post": "Post"
+  },
+
+  "searchBar": {
+    "placeholder": "Search Inventories...",
+    "button": "Search"
+  },
+
   "footer": {
     "rights": "© 2025 Inventory Management App. All rights reserved."
   }

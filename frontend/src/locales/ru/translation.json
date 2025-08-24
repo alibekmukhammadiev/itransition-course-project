@@ -21,6 +21,44 @@
     },
     "button": "Создать аккаунт"
   },
+  "mainPage": {
+    "latestInventories": "Последние инвентари",
+    "leadingInventories": "Топ-5 инвентарей",
+    "tagCloud": "Облако тегов",
+
+    "table": {
+      "name": "Название",
+      "author": "Автор",
+      "description": "Описание",
+      "items": "Предметы"
+    },
+
+    "tags": {
+      "books": "Книги",
+      "electronics": "Электроника",
+      "hr": "Кадры",
+      "office": "Офис",
+      "people": "Люди",
+      "music": "Музыка",
+      "laptop": "Ноутбук",
+      "headphones": "Наушники",
+      "chair": "Стул",
+      "documents": "Документы",
+      "employee": "Сотрудник",
+      "outOfStock": "Нет в наличии"
+    }
+  },
+  "inventoryPage": {
+    "items": "Предметы",
+    "discussion": "Комментарии",
+    "placeholder": "Напишите комментарий...",
+    "post": "Отправить"
+  },
+  "searchBar": {
+    "placeholder": "Поиск по инвентарям...",
+    "button": "Поиск"
+  },
+
   "footer": {
     "rights": "© 2025 Приложение для управления запасами. Все права защищены."
   }

@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 function MainPage() {
+  const { t } = useTranslation();
   return (
     <div className="container py-4">
       {/* Latest and Top inventories*/}
@@ -6,15 +8,15 @@ function MainPage() {
         {/* Latest Inventories */}
         <div className="border rounded p-0 flex-fill">
           <div className="bg-light border-bottom h5 px-2 py-2 fw-bold">
-            Latest Inventories
+            {t("mainPage.latestInventories")}
           </div>
           <div style={{ maxHeight: "250px", overflowY: "auto" }}>
             <table className="table table-striped mb-0">
               <thead className="table-light">
                 <tr>
-                  <th>Name</th>
-                  <th>Author</th>
-                  <th>Description</th>
+                  <th>{t("mainPage.table.name")}</th>
+                  <th>{t("mainPage.table.author")}</th>
+                  <th>{t("mainPage.table.description")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -70,13 +72,13 @@ function MainPage() {
           style={{ minWidth: "300px", maxWidth: "500px" }}
         >
           <div className="bg-light border-bottom h5 px-2 py-2 fw-bold">
-            Leading 5 Inventories
+            {t("mainPage.leadingInventories")}
           </div>
           <table className="table table-striped mb-0">
             <thead className="table-light">
               <tr>
-                <th>Name</th>
-                <th>Items</th>
+                <th>{t("mainPage.table.name")}</th>
+                <th>{t("mainPage.table.items")}</th>
               </tr>
             </thead>
             <tbody>
@@ -108,26 +110,46 @@ function MainPage() {
       {/* Tag Cloud */}
       <div className="border rounded mt-3">
         <div className="bg-light border-bottom px-3 py-2 fw-bold">
-          Tag Cloud
+          {t("mainPage.tagCloud")}
         </div>
         <div className="p-3 d-flex flex-wrap gap-2">
-          <button className="btn btn-outline-primary btn-sm">Books</button>
-          <button className="btn btn-outline-success btn-sm">
-            Electronics
+          <button className="btn btn-outline-primary btn-sm">
+            {t("mainPage.tags.books")}
           </button>
-          <button className="btn btn-outline-warning btn-sm">HR</button>
-          <button className="btn btn-outline-secondary btn-sm">Office</button>
-          <button className="btn btn-outline-info btn-sm">People</button>
-          <button className="btn btn-outline-dark btn-sm">Music</button>
+          <button className="btn btn-outline-success btn-sm">
+            {t("mainPage.tags.electronics")}
+          </button>
+          <button className="btn btn-outline-warning btn-sm">
+            {t("mainPage.tags.hr")}
+          </button>
+          <button className="btn btn-outline-secondary btn-sm">
+            {t("mainPage.tags.office")}
+          </button>
+          <button className="btn btn-outline-info btn-sm">
+            {t("mainPage.tags.people")}
+          </button>
+          <button className="btn btn-outline-dark btn-sm">
+            {t("mainPage.tags.music")}
+          </button>
 
           {/* More granular */}
-          <button className="btn btn-outline-success btn-sm">Laptop</button>
-          <button className="btn btn-outline-success btn-sm">Headphones</button>
-          <button className="btn btn-outline-secondary btn-sm">Chair</button>
-          <button className="btn btn-outline-warning btn-sm">Documents</button>
-          <button className="btn btn-outline-info btn-sm">Employee</button>
+          <button className="btn btn-outline-success btn-sm">
+            {t("mainPage.tags.laptop")}
+          </button>
+          <button className="btn btn-outline-success btn-sm">
+            {t("mainPage.tags.headphones")}
+          </button>
+          <button className="btn btn-outline-secondary btn-sm">
+            {t("mainPage.tags.chair")}
+          </button>
+          <button className="btn btn-outline-warning btn-sm">
+            {t("mainPage.tags.documents")}
+          </button>
+          <button className="btn btn-outline-info btn-sm">
+            {t("mainPage.tags.employee")}
+          </button>
           <button className="btn btn-outline-danger btn-sm">
-            Out of Stock
+            {t("mainPage.tags.outOfStock")}
           </button>
         </div>
       </div>
