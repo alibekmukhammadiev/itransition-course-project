@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://itransition-final-course-project.netlify.app/",
+    origin: "https://itransition-final-course-project.netlify.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
