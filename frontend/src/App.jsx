@@ -40,12 +40,12 @@ function App() {
   }, []);
 
   // determine whether to show search bar
-  const showSearch = !["/login", "/signup"].includes(location.pathname);
+  const showSearch = !["/login", "/register"].includes(location.pathname);
 
   return (
     <Layout showSearch={showSearch}>
       <Routes>
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/register" element={<SignUp />} />
         <Route path="/login" element={<LogIn />} />
         {/* Protected main page */}
         <Route

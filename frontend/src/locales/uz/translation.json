@@ -1,4 +1,10 @@
 {
+  "header": {
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish",
+    "logout": "Chiqish"
+  },
+
   "login": {
     "title": "Kirish",
     "span": "Akkauntingiz yo'qmi?",

@@ -1,4 +1,9 @@
 {
+  "header": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
   "login": {
     "title": "Login",
     "span": "Don't have an account?",
